@@ -1,0 +1,24 @@
+{
+  "name": "backem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@types/mqtt": "^2.5.0",
+    "@types/multicast-dns": "^7.2.1",
+    "@types/node": "^20.4.2",
+    "@types/ping": "^0.4.1",
+    "esm": "^3.2.25",
+    "mqtt": "^4.3.7",
+    "multicast-dns": "^7.2.5",
+    "ping": "^0.4.4"
+  }
+}

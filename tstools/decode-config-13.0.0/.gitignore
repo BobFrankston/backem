@@ -1,0 +1,15 @@
+# local conf files
+*.conf
+*.dmp
+*.json
+/build-executables/build/
+/build-executables/dist/
+
+# pyinstaller
+__pycache__/
+
+# pypi setup
+/dist/
+/*.egg-info/
+/build/
+/.venv/
