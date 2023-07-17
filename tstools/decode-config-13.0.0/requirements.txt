@@ -1,3 +1,0 @@
-requests
-configargparse
-paho-mqtt

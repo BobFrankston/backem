@@ -10,7 +10,7 @@ import { Tasmotadiscovery } from './tasdefs.js'
 
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const decode = path.join(here, 'tstools', 'decode-config.exe');
+const decode = path.join(path.dirname(here), 'tstools', 'decode-config.exe');
 
 
 const backedup = new Map<string, Date>();

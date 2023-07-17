@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 import { executeCommandLine, testHostReachability } from './utils.js';
 import { mqttListner } from './mqttx.js';
 const here = path.dirname(fileURLToPath(import.meta.url));
-const decode = path.join(here, 'tstools', 'decode-config.exe');
+const decode = path.join(path.dirname(here), 'tstools', 'decode-config.exe');
 const backedup = new Map();
 const waiter = 1000 * 60 * 15; // 15 minutes
 let backdir = '';
