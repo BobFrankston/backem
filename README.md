@@ -1,5 +1,5 @@
 # Caveat
-This is a **work-in-progress** and experimental. It is meant more as a prototype than a real offering. It is likely to have radical reworks ... or be ignored for months.
+This is a **work-in-progress** and experimental. It is meant more as a prototype than a real offering. It is likely to have radical reworks ... or be ignored for months. Though I am sharing this publicly I'm treating it as a personal experiment.
 # Usage Notes
 This requires https://github.com/tasmota/decode-config/releases in a directory ../tstools (typically a symbolic link).
 
