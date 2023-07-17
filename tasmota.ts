@@ -12,7 +12,6 @@ import { Tasmotadiscovery } from './tasdefs.js'
 const here = path.dirname(fileURLToPath(import.meta.url));
 const decode = path.join(path.dirname(here), 'tstools', 'decode-config.exe');
 
-
 const backedup = new Map<string, Date>();
 const waiter = 1000 * 60 * 15; // 15 minutes
 
@@ -20,6 +19,11 @@ let backdir = '';
 export function enumerateTasmotaDevices(backdirp: string) {
     backdir = backdirp;
     mqttListner('tasmota/discovery/#', backupTasmotaSettings);
+}
+
+if (!fs.existsSync(decode)) {
+    console.error(`Missing ../tstools/decode-config.exe. It is available from https://github.com/tasmota/decode-config/releases`);
+    process.exit(1);
 }
 
 // async function backupTasmotaSettings(deviceIp: string, hn: string, backupFile: string) {

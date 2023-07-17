@@ -1,3 +1,4 @@
+import fs from 'fs';
 import fp from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -11,6 +12,10 @@ let backdir = '';
 export function enumerateTasmotaDevices(backdirp) {
     backdir = backdirp;
     mqttListner('tasmota/discovery/#', backupTasmotaSettings);
+}
+if (!fs.existsSync(decode)) {
+    console.error(`Missing ../tstools/decode-config.exe. It is available from https://github.com/tasmota/decode-config/releases`);
+    process.exit(1);
 }
 // async function backupTasmotaSettings(deviceIp: string, hn: string, backupFile: string) {
 async function backupTasmotaSettings(payloado) {
